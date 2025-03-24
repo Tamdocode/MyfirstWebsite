@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tam do things</title>
+		<link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('Background.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+        }
+        .container {
+            background: Pink;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .task-input {
+            width: 96%;
+            padding: 5px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .add-btn {
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+        .task-list li {
+            padding: 10px;
+            background: #eee;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+    </style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>To-Do List</h2>
+			<input type="text" class="task-input" placeholder="Add a task...">
+			<button class="add-btn">Add Task</button>
+			<ul class="task-list"></ul>
+		</div>
+	</body>
+</html>
